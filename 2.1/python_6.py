@@ -1,0 +1,11 @@
+name = input()
+price = int(input())
+weight = int(input())
+client_money = int(input())
+print('чек')
+print(f'{name} - {weight}кг - {price}руб/кг')
+print(f'итого: {price*weight}руб')
+print(f'внесено: {client_money}руб')
+print(f'сдача: {client_money - (price * weight)}руб')
+if client_money - price <= 0:
+    print('недостаточно средств')
