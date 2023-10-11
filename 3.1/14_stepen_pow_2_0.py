@@ -1,4 +1,3 @@
-import math
 string = input()
 mylist = string.split()
 
