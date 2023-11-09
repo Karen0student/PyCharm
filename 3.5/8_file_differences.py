@@ -29,6 +29,20 @@ set3 = set1.symmetric_difference(set2)
 # print("\n".join(set3))
 set3 = sorted(set3)
 print(set3)
-with open("answer.txt", "w", encoding="UTF-8") as file_answer:
+with open(input(), "w", encoding="UTF-8") as file_answer:
     print("\n".join(set3), file=file_answer)
 file_answer.close()
+
+
+# second solution
+# with open(input(), encoding='utf-8') as file1:
+#     set1 = set(file1.read().split())
+#
+# with open(input(), encoding='utf-8') as file2:
+#     set2 = set(file2.read().split())
+#
+# with open(input(), 'w', encoding='utf-8') as file:
+#     answer_list = sorted(list(set1.symmetric_difference(set2)))
+#     answer_line = '\n'.join(answer_list)
+#     file.write(answer_line)
+
